@@ -1,15 +1,22 @@
-import cv2
-import cvlib as cv
-from cvlib.object_detection import draw_bbox
-from gtts import gTTS
-from playsound import playsound
+import cv2 #type: ignore
+import cvlib as cv #type: ignore
+from cvlib.object_detection import draw_bbox #type: ignore
+from gtts import gTTS #type: ignore
+from playsound import playsound #type: ignore
 
+# convert speech to text
 def speech(text):
     print(text)
     language = "en"
     output = gTTS(text=text, lang=language, slow=False)
     output.save("sounds/output.mp3")
     playsound("sounds/output.mp3")
+
+def __init__(self):
+        # Resize frame for a faster speed
+        self.frame_resizing = 0.25
+        # self.frame = cv2.resize(frame, None, fx=self.frame_resizing, fy=self.frame_resizing)
+
 
 video = cv2.VideoCapture(0)
 labels = []
