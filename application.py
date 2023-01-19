@@ -9,8 +9,8 @@ from detector import *
 import os
 
 def main():
-    videoPath = "images/pexels-elena-gram-9357246.mp4"
-    # videoPath = 0
+    # videoPath = "images/pexels-elena-gram-9357246.mp4"
+    videoPath = 0
 
     configPath = os.path.join("models/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt")
     modelPath = os.path.join("models/frozen_inference_graph.pb")
